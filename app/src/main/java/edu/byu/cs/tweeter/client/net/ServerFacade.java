@@ -1,4 +1,4 @@
-package edu.byu.cs.tweeter.client.model.net;
+package edu.byu.cs.tweeter.client.net;
 
 import java.io.IOException;
 

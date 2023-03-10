@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
+import edu.byu.cs.tweeter.util.FormattedDate;
+
 /**
  * Represents a status (or tweet) posted by a user.
  */
@@ -56,7 +58,7 @@ public class Status implements Serializable {
     }
 
     public String getFormattedDate(){
-        return new SimpleDateFormat("E MMM d k:mm:ss z y", Locale.US).format(new Date(timestamp));
+        return FormattedDate.getFormattedDate(timestamp);
     }
     public String getPost() {
         return post;
